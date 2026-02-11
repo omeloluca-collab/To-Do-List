@@ -1,0 +1,150 @@
+:root {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color: #111;
+  background: #f4f6fb;
+}
+
+* { box-sizing: border-box; }
+
+.page {
+  min-height: 100vh;
+  padding: 16px;
+  display: grid;
+  gap: 12px;
+  place-items: start center;
+}
+
+.header {
+  width: min(720px, 100%);
+  padding: 6px 4px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+.header p {
+  margin: 6px 0 0;
+  opacity: 0.75;
+  font-size: 0.95rem;
+}
+
+.card {
+  width: min(720px, 100%);
+  background: white;
+  border-radius: 14px;
+  padding: 14px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  display: grid;
+  gap: 12px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 10px;
+}
+
+.input {
+  width: 100%;
+  padding: 12px 12px;
+  border: 1px solid #dfe5f0;
+  border-radius: 10px;
+  outline: none;
+}
+
+.input:focus {
+  border-color: #a8b7ff;
+  box-shadow: 0 0 0 3px rgba(80, 120, 255, 0.15);
+}
+
+.btn {
+  padding: 12px 14px;
+  border: 0;
+  border-radius: 10px;
+  background: #2f63ff;
+  color: white;
+  cursor: pointer;
+}
+
+.btn:active { transform: translateY(1px); }
+
+.filters {
+  display: grid;
+  gap: 10px;
+}
+
+.filterButtons {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.chip {
+  padding: 8px 10px;
+  border-radius: 999px;
+  border: 1px solid #dfe5f0;
+  background: #f7f9ff;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.chip.active {
+  border-color: #2f63ff;
+  background: rgba(47, 99, 255, 0.12);
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 8px;
+}
+
+.item {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid #edf1f7;
+  border-radius: 12px;
+  padding: 10px 12px;
+}
+
+.itemLeft {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.itemLeft span {
+  line-height: 1.2;
+}
+
+.itemLeft.done span {
+  text-decoration: line-through;
+  opacity: 0.55;
+}
+
+.iconBtn {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  border: 1px solid #edf1f7;
+  background: white;
+  cursor: pointer;
+}
+
+.empty {
+  margin: 8px 0 0;
+  opacity: 0.7;
+  padding: 10px 2px;
+}
+
+.footer {
+  width: min(720px, 100%);
+  opacity: 0.7;
+  padding: 2px 4px 12px;
+}
