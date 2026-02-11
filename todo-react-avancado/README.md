@@ -20,5 +20,6 @@ Hooks, Hook customizado, Context API e Memoization.
 1. Clone o repositório
 2. Instale as dependências:
    ```bash
+   cd todo-react-avancado
    npm install
    npm run dev
